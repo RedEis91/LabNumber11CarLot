@@ -1,5 +1,7 @@
-/**
- * Created by Jared on 7/24/17.
- */
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+
 public class CarLot {
-}
+        ArrayList<Car> Lot = new ArrayList<Car>();
+    }
