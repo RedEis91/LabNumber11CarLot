@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class CarLotApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        //instance of CarLot class
         CarLot lot = new CarLot( );
         System.out.println("Add a car: ");
         System.out.println("Make: ");
@@ -17,6 +18,6 @@ public class CarLotApp {
         System.out.println("Price: ");
         double pc = scan.nextDouble();
         lot.addCar(mk, ml, y, pc);
-        
+
     }
 }
