@@ -6,9 +6,17 @@ import java.util.Scanner;
 public class CarLotApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("What's your name?");
-        String name = scan.nextLine();
-        System.out.println("Your name is " + name);
-
+        CarLot lot = new CarLot( );
+        System.out.println("Add a car: ");
+        System.out.println("Make: ");
+        String mk = scan.nextLine();
+        System.out.println("Model: ");
+        String ml = scan.nextLine();
+        System.out.println("Year: ");
+        int y = scan.nextInt();
+        System.out.println("Price: ");
+        double pc = scan.nextDouble();
+        lot.addCar(mk, ml, y, pc);
+        
     }
 }
