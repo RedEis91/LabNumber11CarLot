@@ -20,32 +20,32 @@ public class CarLotApp {
         lot.addCar("Lincoln", "Navigator", 2017, 15000.00);
         lot.addCar("Chrysler", "300", 2015, 55000, "used", 47000);
         lot.addCar("Ford", "Explorer", 2017, 17500);
-        do {
-            //allow user to input make, model, year, price of car for a new car
-            System.out.println("Add a car: ");
-            System.out.println("Make: ");
-            String mk = scan.nextLine();
-            System.out.println("Model: ");
-            String ml = scan.nextLine();
-            System.out.println("Year: ");
-            int y = scan.nextInt();
-            System.out.println("Price: ");
-            double pc = scan.nextDouble();
-            scan.nextLine();
-
-            //call method from CarLot class to add a new car
-            lot.addCar(mk, ml, y, pc);
-
-            System.out.print("Would you like to add a car? (Enter 'yes' or 'no'): ");
-            userAnswer = scan.nextLine();
-
-        } while(userAnswer.equalsIgnoreCase("yes"));
+//        do {
+//            //allow user to input make, model, year, price of car for a new car
+//            System.out.println("Add a car: ");
+//            System.out.println("Make: ");
+//            String mk = scan.nextLine();
+//            System.out.println("Model: ");
+//            String ml = scan.nextLine();
+//            System.out.println("Year: ");
+//            int y = scan.nextInt();
+//            System.out.println("Price: ");
+//            double pc = scan.nextDouble();
+//            scan.nextLine();
+//
+//            //call method from CarLot class to add a new car
+//            lot.addCar(mk, ml, y, pc);
+//
+//            System.out.print("Would you like to add a car? (Enter 'yes' or 'no'): ");
+//            userAnswer = scan.nextLine();
+//
+//        } while(userAnswer.equalsIgnoreCase("yes"));
 
         System.out.println(lot.getCars());
 
         System.out.println("Which car do you want to buy: ");
         int userInput = scan.nextInt();
-        System.out.println(lot.getCars(userInput-1));
+        lot.getCars(userInput);
         lot.removeCars(userInput);
 
 
