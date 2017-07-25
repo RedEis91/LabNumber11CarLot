@@ -40,6 +40,7 @@ public class CarLotApp {
 
         System.out.println("Which car do you want to buy: ");
         int userInput = scan.nextInt();
+        System.out.println(lot.getCars(userInput-1));
         lot.removeCars(userInput);
 
 

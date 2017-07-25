@@ -26,15 +26,21 @@ public class CarLot {
 
     public Car getCars () {
         int i;
-        for (i = 0; i <= Lot.size();i++){
+        for (i = 0; i < Lot.size();i++){
             System.out.println((i + 1) + ": " + Lot.get(i));
         }
         return Lot.get(i);
+    }
+
+    public Car getCars (int userInput) {
+        System.out.println(Lot.get(userInput-1));
+        return Lot.get(userInput-1);
     }
 
     public Car removeCars (int userInput ){
         Lot.remove(userInput - 1);
         return getCars();
     }
+
 
 }
