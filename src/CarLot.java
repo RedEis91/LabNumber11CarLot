@@ -25,10 +25,12 @@ public class CarLot {
     }
 
     public Car getCars () {
-        int i;
-        for (i = 0; i < (Lot.size()-1);i++){
-            System.out.println((i + 1) + ": " + Lot.get(i));
-        }
+            int i;
+            for (i = 0; i <= (Lot.size() - 1); i++) {
+                System.out.println((i + 1) + ": " + Lot.get(i));
+            }
+
+
         return Lot.get(i);
     }
 
@@ -37,7 +39,7 @@ public class CarLot {
         return Lot.get(userInput-1);
     }
 
-    public Car removeCars (int userInput ){
+    public Car removeCars (int userInput){
         Lot.remove(userInput - 1);
         return getCars();
     }

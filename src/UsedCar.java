@@ -16,6 +16,8 @@ public class UsedCar extends Car {
     //to make toString work, I have to match Object's toString header
     @Override
     public String toString() {
-        return super.toString() + "\n" + " (" + used + ") " + mileage + " miles";
+        return super.toString();
     }
+    @Override
+    public String toStringMoreInfo() { return super.toStringMoreInfo()  + " (" + used + ") " + mileage + " miles"; }
 }

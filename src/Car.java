@@ -48,8 +48,10 @@ public class Car {
     }
     //other methods
     //to make toString work, I have to match Object's toString header
-    @Override
     public String toString() {
-        return year+ " " + make + " " + model + ", $" + (int)price + ".00";
+        return year+ " " + make + " " + model;
+    }
+    public String toStringMoreInfo() {
+        return "$" + (int)price + ".00";
     }
 }
