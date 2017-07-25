@@ -26,7 +26,7 @@ public class CarLot {
 
     public Car getCars () {
         int i;
-        for (i = 0; i < Lot.size();i++){
+        for (i = 0; i < (Lot.size()-1);i++){
             System.out.println((i + 1) + ": " + Lot.get(i));
         }
         return Lot.get(i);

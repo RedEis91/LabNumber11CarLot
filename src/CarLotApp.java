@@ -14,7 +14,12 @@ public class CarLotApp {
         String userAnswer = "";
         //new instance of/ object of CarLot class
         CarLot lot = new CarLot( );
-
+        lot.addCar("Ford", "Focus", 2001, 11000.00, "used", 10000);
+        lot.addCar("Chevy", "Cavalier", 2017, 22000.00);
+        lot.addCar("Cadillac", "Escalade", 2013, 14000.00, "used", 50000);
+        lot.addCar("Lincoln", "Navigator", 2017, 15000.00);
+        lot.addCar("Chrysler", "300", 2015, 55000, "used", 47000);
+        lot.addCar("Ford", "Explorer", 2017, 17500);
         do {
             //allow user to input make, model, year, price of car for a new car
             System.out.println("Add a car: ");
