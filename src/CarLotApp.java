@@ -42,11 +42,8 @@ public class CarLotApp {
 //        } while(userAnswer.equalsIgnoreCase("yes"));
         String contin = "";
         do {
-        try {
-            System.out.println(lot.getCars());
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println();
-        }
+
+        lot.getCars();
         System.out.println("Select a car: ");
         int selection = scan.nextInt();
         Car b = lot.getCars(selection);
@@ -65,7 +62,6 @@ public class CarLotApp {
                 System.out.println();
             }
         } else {
-            System.out.println(buy);
             System.out.println("OK");
         }
 

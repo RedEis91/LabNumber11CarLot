@@ -24,14 +24,16 @@ public class CarLot {
         Lot.get(id);
     }
 
-    public Car getCars () {
+    public void getCars () {
             int i;
             for (i = 0; i <= (Lot.size() - 1); i++) {
                 System.out.println((i + 1) + ": " + Lot.get(i));
             }
+    }
 
-
-        return Lot.get(i);
+    public ArrayList <Car> returnList (){
+        return Lot;
+        //keep in mind cloning objects
     }
 
     public Car getCars (int userInput) {
@@ -39,9 +41,9 @@ public class CarLot {
         return Lot.get(userInput-1);
     }
 
-    public Car removeCars (int userInput){
+    public void removeCars (int userInput){
         Lot.remove(userInput - 1);
-        return getCars();
+        getCars();
     }
 
 
